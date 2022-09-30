@@ -1,0 +1,8 @@
+[
+  "test_fibonacci.py::test_fib[2-1]",
+  "test_fibonacci.py::test_fib[3-2]",
+  "test_fibonacci.py::test_fib[4-3]",
+  "test_fibonacci.py::test_fib[5-5]",
+  "test_fibonacci.py::test_fib_recursion_anchor",
+  "test_fibonacci.py::test_fib_with_negative_arguments"
+]
