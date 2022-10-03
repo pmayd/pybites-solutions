@@ -11,11 +11,7 @@ def test_list_to_decimal_accepts_list_like(nums):
 
 @pytest.mark.parametrize(
     "nums",
-    [
-        ([True, False]),
-        ([1.1, 2.2, 3.3]),
-        ("test")
-    ],
+    [([True, False]), ([1.1, 2.2, 3.3]), ("test")],
 )
 def test_list_to_decimal_throw_typeerror(nums):
     with pytest.raises(TypeError):
@@ -24,21 +20,15 @@ def test_list_to_decimal_throw_typeerror(nums):
 
 @pytest.mark.parametrize(
     "nums",
-    [
-        (range(-1,10)),
-        (range(20)),
-        (range(1,12,2))
-    ],
+    [(range(-1, 10)), (range(20)), (range(1, 12, 2)), (range(11))],
 )
 def test_list_to_decimal_throw_valueerror(nums):
     with pytest.raises(ValueError):
         list_to_decimal(nums)
 
 
-@pytest.mark.parametrize("nums, expected", [
-    ([1,7,5], 175),
-    ([0,3,1,2], 312),
-    ([3,0,5,1], 3051)
-])
+@pytest.mark.parametrize(
+    "nums, expected", [([1, 7, 5], 175), ([0, 3, 1, 2], 312), ([3, 0, 5, 1], 3051), (list(range(10)), 123456789)]
+)
 def test_list_to_decimal(nums, expected):
     assert list_to_decimal(nums) == expected
