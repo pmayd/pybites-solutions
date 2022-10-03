@@ -2,6 +2,7 @@
   "test_numbers_to_dec.py::test_list_to_decimal[nums0-175]",
   "test_numbers_to_dec.py::test_list_to_decimal[nums1-312]",
   "test_numbers_to_dec.py::test_list_to_decimal[nums2-3051]",
+  "test_numbers_to_dec.py::test_list_to_decimal[nums3-123456789]",
   "test_numbers_to_dec.py::test_list_to_decimal_accepts_list_like[nums0]",
   "test_numbers_to_dec.py::test_list_to_decimal_accepts_list_like[nums1]",
   "test_numbers_to_dec.py::test_list_to_decimal_accepts_list_like[nums2]",
@@ -11,5 +12,6 @@
   "test_numbers_to_dec.py::test_list_to_decimal_throw_valueerror[nums0]",
   "test_numbers_to_dec.py::test_list_to_decimal_throw_valueerror[nums1]",
   "test_numbers_to_dec.py::test_list_to_decimal_throw_valueerror[nums2]",
+  "test_numbers_to_dec.py::test_list_to_decimal_throw_valueerror[nums3]",
   "test_numbers_to_dec.py::test_list_to_decimal_throw_valueerror[test]"
 ]
